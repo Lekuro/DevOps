@@ -1,0 +1,202 @@
+{
+  "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112021318",
+  "name": "CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112021318",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourcegroups/NewResourceGroup/providers/Microsoft.Compute/virtualMachines/myCentosVM1",
+    "marketplaceItemId": "eurolinuxspzoo1620639373013.centos-8-5-freecentos-8-5-free",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "5917993892312274204",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "networkInterfaceName2": {
+        "type": "String",
+        "value": "mycentosvm1934_z2"
+      },
+      "backendPoolId": {
+        "type": "String",
+        "value": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/loadBalancers/myLoadBalancer/backendAddressPools/myBackendPool"
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "myNetworkSecurityGroup"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "myNetworkSecurityGroupRule",
+            "properties": {
+              "priority": 100,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceApplicationSecurityGroups": [],
+              "destinationApplicationSecurityGroups": [],
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "80"
+            }
+          },
+          {
+            "name": "default-allow-ssh",
+            "properties": {
+              "priority": 1000,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceApplicationSecurityGroups": [],
+              "destinationApplicationSecurityGroups": [],
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "myBackendSubnet"
+      },
+      "virtualNetworkId": {
+        "type": "String",
+        "value": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "myCentosVM1"
+      },
+      "virtualMachineName2": {
+        "type": "String",
+        "value": "myCentosVM1"
+      },
+      "virtualMachineComputerName2": {
+        "type": "String",
+        "value": "myCentosVM1"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "NewResourceGroup"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "osDiskDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_B1s"
+      },
+      "nicDeleteOption": {
+        "type": "String",
+        "value": "Detach"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser"
+      },
+      "adminPublicKey": {
+        "type": "SecureString"
+      },
+      "customData": {
+        "type": "SecureString"
+      },
+      "zone": {
+        "type": "String",
+        "value": "2"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2023-01-12T00:32:24.2672739Z",
+    "duration": "PT1M35.2708576S",
+    "correlationId": "f14e8e06-19fe-43a0-a75b-75ccd751f011",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkSecurityGroups/myNetworkSecurityGroup",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "myNetworkSecurityGroup"
+          }
+        ],
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkInterfaces/mycentosvm1934_z2",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mycentosvm1934_z2"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkInterfaces/mycentosvm1934_z2",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "mycentosvm1934_z2"
+          }
+        ],
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Compute/virtualMachines/myCentosVM1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "myCentosVM1"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Compute/virtualMachines/myCentosVM1"
+      },
+      {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkInterfaces/mycentosvm1934_z2"
+      },
+      {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkSecurityGroups/myNetworkSecurityGroup"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112021318/operations/C5710EC35194A646",
+    "operationId": "C5710EC35194A646",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:32:24.0760965Z",
+      "duration": "PT1M33.9384412S",
+      "trackingId": "34b5bc0a-50db-4fe4-8643-c56d0f1a3da7",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Compute/virtualMachines/myCentosVM1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "myCentosVM1"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112021318/operations/6DB61FCAEE40B582",
+    "operationId": "6DB61FCAEE40B582",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:31:01.136364Z",
+      "duration": "PT10.9987087S",
+      "trackingId": "9cf48d8b-8fe2-4ab8-8fd0-12dfc9d33b00",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkInterfaces/mycentosvm1934_z2",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mycentosvm1934_z2"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112021318/operations/93B36E33D3729F1A",
+    "operationId": "93B36E33D3729F1A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:30:55.5500898Z",
+      "duration": "PT5.4124345S",
+      "trackingId": "4a8fa02c-3dd8-481d-98d7-f5dcc5fc6853",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkSecurityGroups/myNetworkSecurityGroup",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "myNetworkSecurityGroup"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112021318/operations/08585281234375764882",
+    "operationId": "08585281234375764882",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:32:24.2435442Z",
+      "duration": "PT1M34.1058889S",
+      "trackingId": "a85e6015-3198-4bee-a66b-836a70896092",
+      "statusCode": "OK"
+    }
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112023345/operations/2304E994D4CB2C28",
+    "operationId": "2304E994D4CB2C28",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:44:07.2314632Z",
+      "duration": "PT2M0.0864105S",
+      "trackingId": "22d57a7e-84b6-4d80-a8f8-4cc9fa324e05",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Compute/virtualMachines/myCentosVM2",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "myCentosVM2"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112023345/operations/77919E94F67F7C73",
+    "operationId": "77919E94F67F7C73",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:42:13.1144513Z",
+      "duration": "PT5.9693986S",
+      "trackingId": "de59e82b-299a-4431-9e99-c1827d8b6e0b",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Network/networkInterfaces/mycentosvm2691_z3",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mycentosvm2691_z3"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/32c053e8-1493-44e5-a7b4-72bbd7f6cac0/resourceGroups/NewResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-eurolinuxspzoo1620639373013.centos-8-5-f-20230112023345/operations/08585281227604744141",
+    "operationId": "08585281227604744141",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-01-12T00:44:07.3845276Z",
+      "duration": "PT2M0.2394749S",
+      "trackingId": "69523414-da75-4c60-8f18-3b3c2113ecca",
+      "statusCode": "OK"
+    }
+  }
+]
